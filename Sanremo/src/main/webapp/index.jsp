@@ -24,6 +24,7 @@ String language = locale.getLanguage();
 String country = locale.getCountry(); 
 
 
+
 HashMap<String, String> EtichettaIta = new HashMap<String, String>();
 
 EtichettaIta.put("maintitle","Benvenuti a Sanremo");
