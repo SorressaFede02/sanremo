@@ -17,16 +17,12 @@
 </td>
 </tr>
 </table>
-<ul>
-<li><p><b>Nome:</b>
 
 <%
 Locale locale = request.getLocale();
 String language = locale.getLanguage();
 String country = locale.getCountry(); 
 
-out.println("Language : " + language + "<br />");
-out.println("Country : " + country + "<br />");
 
 HashMap<String, String> EtichettaIta = new HashMap<String, String>();
 
