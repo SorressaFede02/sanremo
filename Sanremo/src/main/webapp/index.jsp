@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ page import="java.io.*,java.util.*" %>
+    <%@ page import="java.io.*,java.text.SimpleDateFormat,java.util.*" %>
     <%@ page import="entita.*" %>
 <!DOCTYPE html>
 <html>
@@ -19,6 +19,15 @@
 </table>
 
 <%
+
+Date data = new Date();
+
+SimpleDateFormat formattazione = new SimpleDateFormat("dd/MM/yyyy");
+String dataFormattata = formattazione.format(data);
+
+System.out.println("Oggi è il:" + dataFormattata);
+
+
 Locale locale = request.getLocale();
 String language = locale.getLanguage();
 String country = locale.getCountry(); 
